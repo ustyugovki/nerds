@@ -1,0 +1,330 @@
+
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+      
+  --basic-red: #FB565A;
+  --button-red-focus: #E74246;
+  --button-red-active: #D7373B;
+
+  --basic-green: #00CA74;
+  --basic-green-focus: #00BC6C;
+  --basis-green-active: #00AA62;
+
+  --basic-yellow: #EFC84A;
+  --basic-yellow-focus: #EAB534;
+  --basic-yellow-active: #E5A722;
+
+  --basic-grey: #eeeeee;
+  --basic-active: #A7A7A7; 
+  --basic-logo: #cccccc;
+  --basic-element: #e1e1e1;
+  --basic-text: #666666;
+}
+
+a {
+  /* удаляем в сыылках нижнее подчеркивание */
+  text-decoration: none;
+}
+
+/* все картинки не будут выходитьза контейнер */
+img {
+  /* Устанавливает максимальную ширину элемента */
+  max-width: 100%;
+  /* Устанавливает высоту блочных или заменяемых элементов.
+  Высота не включает толщину границ вокруг элемента, значение отступов и полей. */
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Global */
+.page-body {
+  /* внешний отступ/поле от каждого края элемента */
+  margin: 0;
+  /* внутренние отступы/поля со всех сторон элемента */
+  padding: 0;
+  /* добавляем основоной и запасной Arial шрифты */
+  font-family: 'Roboto', Arial, sans-serif;
+  color: var(--basic-black);
+}
+
+.main-header {
+  /* Определяет цвет фона элемента */
+  background-color: var(--basic-grey);
+}
+
+/* Navigation */
+
+.main-navigation {
+  font-size: 16px;
+  /* интерлиньяж (межстрочный интервал) текста */
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.site-navigation {
+  /* отключаем точки(булеты) в списках */
+  list-style: none;
+}
+
+/* цвет во всех ссылках(тег а) перечисленных классов */
+.site-navigation a,
+.user-navigation a {
+  font: inherit;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+/* цвет взаимодействия для доступности
+hover - стиль элемента при наведении на него курсора мыши
+focus - стиль для элемента получающего фокус */
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--basic-red);
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: var(--basic-active); 
+}
+
+
+/* Features */
+
+.features {
+  background-color: var(--basic-grey);
+}
+
+.features h3 {
+  margin: 0;
+  font-size: 55px;
+  /* интерлиньяж (межстрочный интервал) текста */
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.features p {
+  /* margin-top: 0; */
+  font-size: 16px;
+  /* интерлиньяж (межстрочный интервал) текста */
+  line-height: 24px;
+}
+
+.button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--basic-white);
+  /* вертикальное выравнивание элементов по середине внутри своих родителей */
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+}
+
+/* стиль элемента при наведении на него курсора мыши,
+но при этом элемент еще не активирован,
+иными словами кнопка мыши не нажата */
+.button:hover,
+/* определяет стиль для элемента получающего фокус.
+Например, им может быть текстовое поле формы,
+в которое устанавливается курсор */
+.button:focus {
+    background-color: var(--button-red-focus);
+}
+
+.button:active {
+  background-color: var(--button-red-active);
+    /* уровень прозрачности текста*/
+    color: rgba(255,255,255,0.3); 
+}
+
+/* Services */
+
+.services-list {
+  /* отключаем точки(булеты) в списках */
+  list-style: none;
+}
+
+.services-list h3 {
+    /* margin-top: 0; */
+    font-size: 24px;
+    /* интерлиньяж (межстрочный интервал) текста */
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.services-list p {
+  /* margin-top: 0; */
+  font-size: 16px;
+  /* интерлиньяж (межстрочный интервал) текста */
+  line-height: 24px;
+}
+
+.button-green {
+  background-color: var(--basic-green);
+}
+.button-green:hover,
+.button-green:focus {
+  background-color: var(--basic-green-focus);
+}
+.button-green:active {
+  background-color: var(--basis-green-active);
+  /* уровень прозрачности текста*/
+  /* color: rgba(255,255,255,0.3);  */
+}
+
+.button-yellow {
+  background-color: var(--basic-yellow);
+}
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: var(--basic-yellow-focus);
+}
+.button-yellow:active {
+  background-color: var(--basic-yellow-active);
+  /* уровень прозрачности текста*/
+  color: rgba(255,255,255,0.3); 
+}
+
+/* INFO */
+
+.smoll-proud {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.confession {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.orders {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.orders-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;  
+}
+
+.orders-item {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* LEVEL */
+
+.level-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.level-list {
+  /* отключаем точки(булеты) в списках */
+  list-style: none;
+}
+
+.level-persent {
+  font-size: 45px;
+  line-height: 10.1px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.level-list-text {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* PARTNERS */
+
+.partners a{
+  opacity: 20%;
+}
+
+.partners a:hover,
+.partners a:focus {
+  opacity: 100%;
+}
+.partners a:active {
+  opacity: 10%;
+}
+
+/* CONTACTS */
+
+.contacts .caption {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts .text {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-text);
+}
+
+/* FOOTER */
+.footer-list {
+    /* отключаем точки(булеты) в списках */
+    list-style: none;
+}
+
+/* COCIAL */
+
+.footer-circle {
+  width: 81px;
+  height: 81px;
+  background-color: var(--basic-element);
+  border-radius: 50px;
+  text-align: center;
+  /* Устанавливает интерлиньяж (межстрочный интервал) текста */
+  line-height: 85px;
+  fill: var(--basic-white);
+}
+
+.footer-circle:hover,
+.footer-circle:focus {
+    background-color: var(--button-red-focus);
+}
+
+.footer-circle:active {
+  background-color: var(--button-red-active);
+  fill: rgba(255, 255, 255, 0.3);;
+}
+
+.footer-friends {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.footer-friends-percent {
+  font-size: 16px;
+  line-height: 24px;
+}
