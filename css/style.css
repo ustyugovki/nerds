@@ -1,9 +1,10 @@
 
 /* Variables */
+
 :root {
   --basic-black: #000000;
   --basic-white: #ffffff;
-      
+
   --basic-red: #FB565A;
   --button-red-focus: #E74246;
   --button-red-active: #D7373B;
@@ -17,23 +18,20 @@
   --basic-yellow-active: #E5A722;
 
   --basic-grey: #eeeeee;
-  --basic-active: #A7A7A7; 
+  --basic-active: #A7A7A7;
   --basic-logo: #cccccc;
   --basic-element: #e1e1e1;
   --basic-text: #666666;
+
+  --basic-modal: #3f4040;
 }
 
 a {
-  /* удаляем в сыылках нижнее подчеркивание */
   text-decoration: none;
 }
 
-/* все картинки не будут выходитьза контейнер */
 img {
-  /* Устанавливает максимальную ширину элемента */
   max-width: 100%;
-  /* Устанавливает высоту блочных или заменяемых элементов.
-  Высота не включает толщину границ вокруг элемента, значение отступов и полей. */
   height: auto;
 }
 
@@ -51,18 +49,15 @@ img {
 }
 
 /* Global */
+
 .page-body {
-  /* внешний отступ/поле от каждого края элемента */
   margin: 0;
-  /* внутренние отступы/поля со всех сторон элемента */
   padding: 0;
-  /* добавляем основоной и запасной Arial шрифты */
   font-family: 'Roboto', Arial, sans-serif;
   color: var(--basic-black);
 }
 
 .main-header {
-  /* Определяет цвет фона элемента */
   background-color: var(--basic-grey);
 }
 
@@ -70,17 +65,14 @@ img {
 
 .main-navigation {
   font-size: 16px;
-  /* интерлиньяж (межстрочный интервал) текста */
   line-height: 30px;
   font-weight: 500;
 }
 
 .site-navigation {
-  /* отключаем точки(булеты) в списках */
   list-style: none;
 }
 
-/* цвет во всех ссылках(тег а) перечисленных классов */
 .site-navigation a,
 .user-navigation a {
   font: inherit;
@@ -88,9 +80,6 @@ img {
   text-transform: uppercase;
 }
 
-/* цвет взаимодействия для доступности
-hover - стиль элемента при наведении на него курсора мыши
-focus - стиль для элемента получающего фокус */
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
@@ -100,9 +89,8 @@ focus - стиль для элемента получающего фокус */
 
 .site-navigation a:active,
 .user-navigation a:active {
-  color: var(--basic-active); 
+  color: var(--basic-active);
 }
-
 
 /* Features */
 
@@ -113,15 +101,12 @@ focus - стиль для элемента получающего фокус */
 .features h3 {
   margin: 0;
   font-size: 55px;
-  /* интерлиньяж (межстрочный интервал) текста */
   line-height: 55px;
   font-weight: 500;
 }
 
 .features p {
-  /* margin-top: 0; */
   font-size: 16px;
-  /* интерлиньяж (межстрочный интервал) текста */
   line-height: 24px;
 }
 
@@ -132,50 +117,37 @@ focus - стиль для элемента получающего фокус */
   font-weight: 500;
   text-align: center;
   color: var(--basic-white);
-  /* вертикальное выравнивание элементов по середине внутри своих родителей */
   vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--basic-red);
   border: none;
 }
 
-/* стиль элемента при наведении на него курсора мыши,
-но при этом элемент еще не активирован,
-иными словами кнопка мыши не нажата */
 .button:hover,
-/* определяет стиль для элемента получающего фокус.
-Например, им может быть текстовое поле формы,
-в которое устанавливается курсор */
 .button:focus {
-    background-color: var(--button-red-focus);
+  background-color: var(--button-red-focus);
 }
 
 .button:active {
   background-color: var(--button-red-active);
-    /* уровень прозрачности текста*/
-    color: rgba(255,255,255,0.3); 
+  color: rgba(255,255,255,0.3);
 }
 
 /* Services */
 
 .services-list {
-  /* отключаем точки(булеты) в списках */
   list-style: none;
 }
 
 .services-list h3 {
-    /* margin-top: 0; */
-    font-size: 24px;
-    /* интерлиньяж (межстрочный интервал) текста */
-    line-height: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .services-list p {
-  /* margin-top: 0; */
   font-size: 16px;
-  /* интерлиньяж (межстрочный интервал) текста */
   line-height: 24px;
 }
 
@@ -188,8 +160,6 @@ focus - стиль для элемента получающего фокус */
 }
 .button-green:active {
   background-color: var(--basis-green-active);
-  /* уровень прозрачности текста*/
-  /* color: rgba(255,255,255,0.3);  */
 }
 
 .button-yellow {
@@ -201,8 +171,7 @@ focus - стиль для элемента получающего фокус */
 }
 .button-yellow:active {
   background-color: var(--basic-yellow-active);
-  /* уровень прозрачности текста*/
-  color: rgba(255,255,255,0.3); 
+  color: rgba(255,255,255,0.3);
 }
 
 /* INFO */
@@ -228,7 +197,7 @@ focus - стиль для элемента получающего фокус */
 .orders-list {
   list-style: none;
   font-size: 16px;
-  line-height: 24px;  
+  line-height: 24px;
 }
 
 .orders-item {
@@ -245,7 +214,6 @@ focus - стиль для элемента получающего фокус */
 }
 
 .level-list {
-  /* отключаем точки(булеты) в списках */
   list-style: none;
 }
 
@@ -291,8 +259,7 @@ focus - стиль для элемента получающего фокус */
 
 /* FOOTER */
 .footer-list {
-    /* отключаем точки(булеты) в списках */
-    list-style: none;
+  list-style: none;
 }
 
 /* COCIAL */
@@ -303,14 +270,13 @@ focus - стиль для элемента получающего фокус */
   background-color: var(--basic-element);
   border-radius: 50px;
   text-align: center;
-  /* Устанавливает интерлиньяж (межстрочный интервал) текста */
   line-height: 85px;
   fill: var(--basic-white);
 }
 
 .footer-circle:hover,
 .footer-circle:focus {
-    background-color: var(--button-red-focus);
+  background-color: var(--button-red-focus);
 }
 
 .footer-circle:active {
@@ -327,4 +293,204 @@ focus - стиль для элемента получающего фокус */
 .footer-friends-percent {
   font-size: 16px;
   line-height: 24px;
+}
+
+/* MODAL */
+
+.modal {
+  width: 960px;
+  height: 590px;
+  border: 3px solid red;
+  background-color: var(--basic-modal);
+  box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75);
+}
+
+.modal .title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.modal label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+
+/* FLEXBOX  NAVIGATION */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+  /* border: 2px solid rgb(255, 0, 242); */
+}
+
+.main-header {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 67px;
+  /* border: 3px solid orange; */
+}
+
+.main-navigation {
+  min-height: 67px;
+  padding-top: 48px;
+  /* border: 3px solid red; */
+}
+
+.main-navigation .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 67px;
+  /* border: 2px solid yellow; */
+  display: block;
+}
+
+.site-navigation {
+  width: 436px;
+  min-height: 67px;
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid yellow; */
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  width: 115px;
+  min-height: 67px;
+  margin: 0;
+  padding: 0;
+  /* border: 2px solid yellow; */
+}
+
+.slider {
+  width: 91px;
+  height: 21px;
+  position: absolute;
+  top: 430px;
+  left: 50%;
+}
+
+/* FLEXBOX FEATURES */
+
+.features {
+  display: flex;
+  height: 430px;
+  /* border: 2px solid blue; */
+}
+
+.features-text {
+  width: 431px;
+  height: 313px;
+  padding-top: 63px;
+  /* border: 2px solid yellow; */
+}
+
+.mathematic {
+  margin-top: 32px;
+  margin-bottom: 46px;
+}
+
+.features-img {
+  min-height: 430px;
+  width: 729px;
+  background-image: url("../img/slider1.png");
+  background-size: 100% 100%;
+}
+
+.features .button {
+  width: 238px;
+  height: 36px;
+}
+
+/* FLEXBOX SERVICES */
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* border: 3px solid red; */
+}
+
+.service-item {
+  width: 300px;
+  margin-top: 80px;
+  margin-right: 100px;
+  /* border: 3px solid yellow; */
+}
+
+/* FLEXBOX INFO */
+.info {
+  display: flex;
+  justify-content: space-between;
+  /* border: 3px solid blue; */
+}
+
+.info-text {
+  /* border: 3px solid green; */
+}
+
+.level {
+  width: 360px;
+  /* border: 3px solid green; */
+}
+
+.level-img {
+  width: 360px;
+  margin-top: 42px;
+  /* border: 3px solid yellow; */
+}
+
+.level-text {
+  width: 360px;
+  /* border: 3px solid yellow; */
+}
+
+.level-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: auto;
+  /* border: 3px solid rgb(255, 0, 242); */
+}
+
+.level-list-item {
+  /* border: 3px solid red; */
+}
+
+/* FLEXBOX PARTNERS */
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 182px;
+  /* border: 3px solid green; */
+
+
+}
+
+.partners-item {
+  width: 290px;
+
+  text-align: center;
+  vertical-align: center;
+  /* border: 3px solid yellow; */
+}
+
+.partners img {
+  vertical-align: middle;
 }
